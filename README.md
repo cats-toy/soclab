@@ -45,10 +45,10 @@ Resulting in this,<br> <img src='https://imgur.com/ZyjDFch.png'><br>
 
 
 Installing Wazuh
--
--
--
--
+- Installed using curl -sO https://packages.wazuh.com/4.9/wazuh-install.sh && sudo bash ./wazuh-install.sh -a 
+- Had to kill several processes using ports :443 and :9200 to enable the wazuh installer helper to commence installation.
+- Installed Wazuh central components, since UFW is present, i opened ports 1515/tcp and 1514/tcp. After logging in using <wazuh-dashboard-ip>:443, wazuh will check its API connection and other systems.
+- Installed Wazuh agent 
 
 
 Installing TheHive and Cortex
